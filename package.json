@@ -1,0 +1,27 @@
+{
+  "name": "nut",
+  "version": "1.0.0",
+  "description": "wine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scqr/nut.git"
+  },
+  "author": "coco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scqr/nut/issues"
+  },
+  "homepage": "https://github.com/scqr/nut#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel-minify": "^0.2.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-ruby-sass": "^3.0.0"
+  }
+}
