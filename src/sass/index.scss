@@ -1,1 +1,252 @@
 @import "common";
+
+/*content*/
+.content{
+  width: 100%;
+  /*banner*/
+  .banner{
+    width:100%;
+    height:592px;
+    position:relative;
+    #uls{
+      height:100%;
+      a{
+        display:block;
+        width:100%;
+        img{
+          width:100%;
+          display:block;
+          position:absolute;
+          left:0;
+          top:0;
+        }
+        #Img1{
+          opacity:1;
+        }
+        #Img2{
+          opacity:0;
+        }
+      }
+    }
+  }
+  /*banner_content*/
+  .banner1{
+    padding:0 20px;
+    .ColumnName {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .ColCont1_1 {
+      text-align: center;
+      max-width: 880px;
+      margin: 0 auto;
+      span{
+        padding: 0 8%;
+      }
+      a{
+        img{
+          vertical-align: middle;
+          width: 18.18%;
+        }
+      }
+    }
+    .ColCont1_2 {
+      max-width: 1024px;
+      margin: 0 auto;
+      text-align: center;
+      color: #5e423e;
+      background: url(../images/bg31.png) no-repeat center;
+      padding: 20px 0;
+      p{
+        margin: 0 0 10px;
+        font-size:0.6em;
+      }
+    }
+    .ColCont1_3 {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      overflow:hidden;
+      p{
+        width: 23.67%;
+        background: url(../images/bg22.png) no-repeat left 6px;
+        padding-left: 15px;
+        float: left;
+        font-size: 0.5em;
+        margin-left: 12.30%;
+        margin-bottom:10px;
+        a{
+          color: #6d5d52;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .clear{
+      clear: both;
+      height: 0px;
+      overflow: hidden;
+      zoom: 0;
+    }
+    .ColCont1_4 {
+      max-width: 1024px;
+      margin: 0 auto;
+      ul{
+        li{
+          width: 24.903%;
+          float: left;
+          padding-left: 1px;
+          position: relative;
+          .ABottom{
+            img{
+              width:100%;
+              height:100%;
+            }
+          }
+          .ATop {
+            position: absolute;
+            background: rgba(103,62,56,0.4);
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            height: 100%;
+            display: block;
+            img{
+              vertical-align: middle;
+              width: 28.5%;
+              margin-top: 26%;
+              margin-left:36%;
+            }
+            .A{
+              display:block;
+            }
+            .AHover{
+              display:none;
+            }
+          }
+          &:hover{
+            .ATop{
+              background:none;
+            }
+            .A{
+              display:none;
+            }
+            .AHover{
+              display:block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner2{
+      padding: 0 20px;
+      .ColumnName {
+          padding: 30px 20px;
+          text-align: center;
+          .TimeL {
+              padding-top: 40px;
+              text-align: center;
+              a{
+                  padding: 0 20px;
+                  border-right: 1px solid #6e605e;
+                  img{
+                      vertical-align: middle;
+                      max-width:100%;
+                  }
+              }
+          }
+      }
+      .ColCont2_1 {
+          text-align: center;
+          max-width: 1024px;
+          margin: 0 auto;
+          background: url(../images/bg33.png) no-repeat center;
+          background-size: 100%;
+          padding: 1.68% 0;
+          a{
+              padding: 0 2.35%;
+              img{
+                  vertical-align: middle;
+                  width: 17.7%;
+              }
+          }
+      }
+      .ColCont2_2 {
+          max-width: 1024px;
+          margin: 0 auto;
+          ul{
+              overflow:hidden;
+              li{
+                  width:30.333333333333%;
+                  margin:0 15px;
+                  float:left;
+                  a{
+                      .ShopImg {
+                          position: relative;
+                          overflow: hidden;
+                          .Img1 {
+                              width: 100%;
+                          }
+                          .ImgTop {
+                              background: url(../images/bg7.png) repeat left top;
+                              width: 100%;
+                              height: 100%;
+                              position: absolute;
+                              left: 0;
+                              top: 0;
+                              display: none;
+                              img{
+                                margin: 0 auto;
+                                display: block;
+                                padding-top: 18.25%;
+                                width: 28.5%;
+                              }
+                              p{
+                                  text-align: center;
+                                  color: #f9f0e4;
+                                  font-size: 1.20em;
+                                  font-family: Arial;
+                                  line-height: 1;
+                                  margin-top: 11.25%;
+                              }
+                          }
+                      }
+                      .ShopCont {
+                          color: #6d5d52;
+                          background: url(../images/bg4.png) no-repeat center bottom;
+                          background-size: 100% auto;
+                          padding: 0 4.75%;
+                          position: relative;
+                          span{
+                              font-size: 1.0em;
+                              display: block;
+                              line-height: 2.5;
+                          }
+                          p{
+                              font-size: 0.55em;
+                              line-height: 1.6;
+                              padding-bottom: 3.75%;
+                              margin-bottom:10px;
+                          }
+                          em{
+                              position: absolute;
+                              width: 20px;
+                              height: 20px;
+                              right: 6px;
+                              bottom: 8px;
+                              display: none;
+                              img{
+                                  vertical-align: top;
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+}
+
