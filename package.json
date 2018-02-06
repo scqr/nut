@@ -2,7 +2,7 @@
   "name": "nut",
   "version": "1.0.0",
   "description": "wine",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,9 +17,7 @@
   },
   "homepage": "https://github.com/scqr/nut#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-babel-minify": "^0.2.0",
-    "gulp-clean-css": "^3.9.2",
+    "gulp-babel-minify": "^0.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.2.0",
     "gulp-ruby-sass": "^3.0.0"
