@@ -6,26 +6,27 @@
   /*banner*/
   .banner{
     width:100%;
-    height:592px;
-    position:relative;
+    //height:100%;
+    //height:592px;
     #uls{
-      height:100%;
+      width: 100%;
+      position: relative;
       a{
+        width: 100%;
         display:block;
-        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
         img{
           width:100%;
-          display:block;
-          position:absolute;
-          left:0;
-          top:0;
+          //display:block;
         }
-        #Img1{
-          opacity:1;
-        }
-        #Img2{
-          opacity:0;
-        }
+      }
+      #Img1{
+        opacity:1;
+      }
+      #Img2{
+        opacity:1;
       }
     }
   }
