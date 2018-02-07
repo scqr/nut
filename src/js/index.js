@@ -1,49 +1,50 @@
 (function ($) {
-    /*banner*/
-    class Pic {
-        constructor ({el, interval = 3000}) {
-            this.el = el;
+//     /*banner*/
+//     $('#uls').height($('#uls a img').height());
+//         console.log($('#uls a img').height());
+//         $(window).resize(function(){
+//         $('#uls').height($('#uls a img').height());
+//     });
+    var count=0;
+    $('#uls').height(592);
+    console.log(0);
+    $(window).resize(function() {
+        $('#uls').height($('#uls a').eq(count).height());
+    });
 
-            this.interval = interval;
+    //2s 轮播
 
-            //add mouseenter event
-            this.el.addEventListener('mouseenter', () => {
-                clearInterval(this.timer);
-        });
-
-            //add mouseleave event
-            this.el.addEventListener('mouseleave', () => {
-                this.autoMove();
-        });
-
-            //get pic list
-            this.img = this.el.$('#uls')[0];
-            this.imgs = Array.from(this.img.getElementsByTagName('a'));
-
-            //auto
-            this.autoMove();
+    let iTimer = setInterval(function () {
+        count++;
+        if(count==2){count=0}
+        if(count==1){
+            $('#Img1').fadeOut();
+            $('#Img2').fadeIn();
         }
-        rightMove () {
-            this.index++;
-            if (this.index >= this.btns.length) {
-                this.index = 0;
-            }
-            this.move();
+        if(count==0){
+            $('#Img2').fadeOut();
+            $('#Img1').fadeIn();
         }
-        move () {
-            //change pic
-            this.imgs.forEach(v => {
-                bufferMove(v, {opacity: 0});
-            this.imgs[this.index].css("display", "block");
-            bufferMove(this.imgs[this.index], {opacity: 100});
-        });
-        }
-        autoMove () {
-            this.timer = setInterval(() => {
-                this.rightMove();
-        }, this.interval);
-        }
-    }
+    },2000)
+    // let currOpacity = 1;
+    // let incOpacity = -0.1;
+    // let iTimer = setInterval(function () {
+    //     // console.log(1);
+    //     //change data
+    //     currOpacity = currOpacity + incOpacity;
+    //     //judge limit data
+    //     if (currOpacity <= 0) {
+    //         incOpacity = 0.1;
+    //         currOpacity = 0;
+    //     } else if (currOpacity >= 1) {
+    //         incOpacity = -0.1;
+    //         currOpacity = 1;
+    //     }
+    //     //change pic
+    //     $("Img1").css({"opacity":"1 - currOpacity"});
+    //     $("Img2").css({"opacity":"currOpacity"});
+    // }, 200);
+
 
 
     /*banner2*/
