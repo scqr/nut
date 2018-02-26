@@ -79,21 +79,17 @@ strong,b{
             }
             .share_box{
                 .weibo{
-                    display:inline-block;
-                    width:28px;
-                    height:28px;
                     vertical-align: bottom;
-                    background:url(../images/Sina.png) no-repeat center;
+                    font-size:0.7em;
+                    color:maroon;
                     &:hover{
                         opacity: .8;
                     }
                 }
                 .weixin{
-                    display:inline-block;
-                    width:28px;
-                    height:28px;
                     vertical-align: bottom;
-                    background:url(../images/Wechat.png) no-repeat center;
+                    font-size:0.7em;
+                    color:maroon;
                     &:hover{
                         opacity: .8;
                     }
@@ -124,7 +120,7 @@ strong,b{
                 }
             }
             .nav_share{
-                width: 288px;
+                width: 22.7%;
                 position: absolute;
                 top: 3px;
                 right: 0;
@@ -136,21 +132,17 @@ strong,b{
                 }
                 .share_box{
                     .weibo{
-                        display:inline-block;
-                        width:28px;
-                        height:28px;
                         vertical-align: bottom;
-                        background:url(../images/Sina.png) no-repeat center;
+                        font-size:0.7em;
+                        color:maroon;
                         &:hover{
                             opacity: .8;
                         }
                     }
                     .weixin{
-                        display:inline-block;
-                        width:28px;
-                        height:28px;
                         vertical-align: bottom;
-                        background:url(../images/Wechat.png) no-repeat center;
+                        font-size:0.7em;
+                        color:maroon;
                         &:hover{
                             opacity: .8;
                         }

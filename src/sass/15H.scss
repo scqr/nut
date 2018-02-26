@@ -1,0 +1,52 @@
+@import "common";
+
+/*goodslist*/
+.goodslist{
+  padding:15%;
+  h2{
+    margin:0 35% 5%;
+    color:maroon;
+    img{
+      vertical-align: middle;
+      margin-left:2%;
+    }
+  }
+  ul{
+    font-size: 0.8em;
+    li{
+      position:relative;
+      border:1px solid maroon;
+      border-radius: 5px;
+      padding:5%;
+      margin-bottom:3%;
+      a{
+        color:brown;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      img{
+        position:absolute;
+        right:6%;
+        top:16%;
+      }
+    }
+  }
+}
+
+/*goodsdetail*/
+.goodsdetail{
+  padding:15%;
+  position:relative;
+  .content{
+    font-size: 0.8em;
+    border-bottom:1px solid maroon;
+    padding-bottom:5%;
+    color:maroon;
+    img{
+      position:absolute;
+      top:28.5%;
+      right:16.5%;
+    }
+  }
+}
