@@ -4,9 +4,16 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var savegoods = require('./routes/savegoods');
+var goodslist = require('./routes/goodslist');
+var goodsdetail = require('./routes/goodsdetail');
+var reg = require('./routes/reg');
+var login = require('./routes/login');
+var usercheck = require('./routes/usercheck');
 
 var app = express();
 
@@ -19,11 +26,23 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(session({
+    secret: 'recommend 128 bytes random string',
+    cookie: { maxAge: 20 * 60 * 1000 },
+    resave: true,
+    saveUninitialized: true
+}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/savegoods', savegoods);
+app.use('/goodslist', goodslist);
+app.use('/goodsdetail', goodsdetail);
+app.use('/reg', reg);
+app.use('/login', login);
+app.use('/usercheck', usercheck);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
