@@ -13,11 +13,11 @@ let VipModel = dbconn.model("vips",vipSchema);
 
 module.exports = {
     //注册
-    "regsave":function (data,func) {
+    "regsave":function (transdata,func) {
         //先在数据库中进行查询
-        this.find({"username":data.username},(d) => {
-           if(d.length == 0) {   //没有查到，就可以进行保存
-               this.add(data,func);
+        this.find({"username":transdata.username},(resdata) => {
+           if(resdata.length == 0) {   //没有查到，就可以进行保存
+               this.add(transdata,func);
            } else {     //查到了，说明用户名已经存在，不能注册
                func(false);
             }

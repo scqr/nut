@@ -11,6 +11,8 @@ var users = require('./routes/users');
 var savegoods = require('./routes/savegoods');
 var goodslist = require('./routes/goodslist');
 var goodsdetail = require('./routes/goodsdetail');
+var savecomment = require('./routes/savecomment');
+var index = require('./routes/index');
 var reg = require('./routes/reg');
 var login = require('./routes/login');
 var usercheck = require('./routes/usercheck');
@@ -40,9 +42,11 @@ app.use('/users', users);
 app.use('/savegoods', savegoods);
 app.use('/goodslist', goodslist);
 app.use('/goodsdetail', goodsdetail);
+app.use('/index', index);
 app.use('/reg', reg);
 app.use('/login', login);
 app.use('/usercheck', usercheck);
+app.use('/savecomment', savecomment);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

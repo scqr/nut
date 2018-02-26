@@ -45,8 +45,29 @@
     color:maroon;
     img{
       position:absolute;
-      top:28.5%;
+      top:20.5%;
       right:16.5%;
+    }
+  }
+  .message{
+    margin:5% 1%;
+    font-size:0.7em;
+    ul{
+      li{
+        padding:0 1% 2%;
+        border-bottom:1px solid maroon;
+      }
+    }
+    #pageBox{
+      margin:2% 32% 2%;
+    }
+    #txtpageIndex{
+      display:inline-block;
+      width:5%;
+    }
+    #btnGo{
+      display:inline-block;
+      width:10%;
     }
   }
 }
