@@ -25,9 +25,9 @@ router.post('/', function(req, res, next) {
         if(data.length == 0) {
             res.render("login",{"errmsg":"登录失败！"});
         } else {
-            //用session保存了一个变量username
+            //用session保存了一个变量username，这个username保存到服务器端的内存里
             req.session.username = username;
-            //记录cookie，在服务器端执行的代码
+            //记录cookie，在服务器端执行的代码。这个username保存前端硬盘上。
             res.cookie("username",username);
             res.redirect("index.html");
             // res.redirect("index");
